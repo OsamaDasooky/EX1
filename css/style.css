@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fc5757;
+}
+/* template componaent  */
+.main-heading {
+    margin: 50px 0;
+}
+.main-heading  p:nth-child(1){
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.main-heading  p:nth-child(2){
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* template component  */
+/* start header */
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-transform: capitalize;
+    box-shadow:  0 1px 10px rgb(5, 0, 0);
+}
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .container img {
+    height: 70px;
+}
+header ul {
+    display: flex;
+}
+header ul li {
+    display: inline;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    transition: 1s;
+}
+header ul li:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+header .container form {
+    align-self: center;
+    display: flex;
+}
+header .container form label {
+    background-color: #fc5757;
+    padding: 8px;
+    border-radius: 10px;
+    width: fit-content;
+}
+header .container form input {
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 500px;
+}
+main {
+    padding:  50px;
+}
+/* end header */
+/* start main */
+main .container .card-box  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .container .card  {
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    flex-basis: 30%;
+} 
+main .container .card  img {    
+    height: 200px;
+    width:200px;
+    margin-right: 20px; 
+    position: relative; 
+}
+main .container .card::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.30);
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 1;
+}   
+main .container .card  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+       
+main .container .review {
+    display: flex;
+    justify-content:space-evenly;
+}
+main .container .rev {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    background-color: #ff9d9dd6;
+    padding: 20px;
+    align-items: flex-start;
+    border-radius: 20px;
+    margin: 10px auto;
+    position: relative;
+    height: fit-content;
+}
+main .container .rev h3 {
+    margin-top: 10px ;
+    text-transform: capitalize;
+}
+main .container .rev img {
+    border-radius: 50%;
+    width: 100px;
+}
+main .container .rev p {
+    margin-bottom: 10px ;
+}
+main .container .rev::before {
+    content: '';
+    position: absolute;
+    border: 20px solid ;
+    border-color: transparent black transparent transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -70px;
+}
+main .container .rev::after {
+    content: '';
+    position: absolute;
+    border: 20px solid ;
+    border-color: transparent transparent transparent black;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -70px;
+}
+[type="text"] {
+    display: block; 
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border-color: transparent;
+    text-transform: capitalize;
+}
+main .container form {
+    margin: 0 auto;
+}
+main .container form label {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+main .container form textarea {
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    outline: none;
+    border-color: transparent;
+    text-transform: capitalize;
+}
+[type="submit"] {
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+}
+main .container .table {
+    padding: 50px 0;
+}
+main .container .table table {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+main .container .table table td,
+main .container .table table th {
+    border-collapse:separate;
+    padding: 10px;
+
+}
+main .container .table table tr:nth-child(odd) {
+    background-color: #ff92928f;
+}
+main .container .table table tr:nth-child(even) {
+    background-color: #c74747b3;
+    }
+/* end main */
+/* start footer */
+footer {
+    height: 50px;
+    background-color: black; 
+}
+footer p {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    height: 100%;
+}
+/* end footer */
